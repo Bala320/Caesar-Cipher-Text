@@ -1,10 +1,20 @@
-//Caesar cipher text:
+/**
+ * 
+ */
+package AffineChiper;
 
+/**
+ *  @author M.NAVEEN
+ *  RANDOM CODER'S
+ *  Tech/Project Lead Android Club
+ */
 import java.util.*;
 public class caesiro
 {
-  public static String encrypt(String text,int shift)
-  {
+	int shift=0;
+	
+  public  String encrypt(String text)
+  {    shift=8;
 	  if(shift>26)
 	  {
 		  shift%=26;
@@ -49,11 +59,11 @@ public class caesiro
 			 cipher=cipher+bal;
 		 }
 	 }
-	 
+	 System.out.println(cipher);
 	  return cipher;
   }
-  public static String decrypt(String text,int shift)
-  {
+  public  String decrypt(String text)
+  {   shift=8;
 	  if(shift>26)
 	  {
 		  shift%=26;
@@ -104,16 +114,21 @@ public class caesiro
  
   public static void main(String arg[])
   {
-	  Scanner sin=new Scanner(System.in);
+	 /* Scanner sin=new Scanner(System.in);
 	  System.out.println("Enter the plain text:\n");
 	  String msg=sin.nextLine();
 	  System.out.println("Enter the shif:\n");
-	  int key=sin.nextInt();
+	 // int key=sin.nextInt();
 	  System.out.println("the encrypted Text:\n");
-	  String cipher=encrypt(msg,key);
+	  String cipher=encrypt(msg);
 	  System.out.println(cipher);
 	  System.out.println("the decrypted Text:\n");
-	  String decode=decrypt(cipher,key);
-	  System.out.println(decode);
+	  String decode=decrypt(cipher);
+	  System.out.println(decode);*/
+	   
+	  String en=new caesiro().encrypt("hello 7299 nave 00%");
+	  System.out.println(new caesiro().decrypt(en) );
+	  ArrayList n=new ArrayList();
+	  
   }
 }
