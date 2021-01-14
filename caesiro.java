@@ -1,13 +1,5 @@
-/**
- * 
- */
-package AffineChiper;
 
-/**
- *  @author M.NAVEEN
- *  RANDOM CODER'S
- *  Tech/Project Lead Android Club
- */
+package AffineChiper;
 import java.util.*;
 public class caesiro
 {
